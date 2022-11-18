@@ -40,6 +40,7 @@ const listenMessage = () => client.on('message', async msg => {
     }
     message = body.toLowerCase();
     console.log('BODY',message)
+    console.log(from)
     const number = cleanNumber(from)
     await readChat(number, message)
 
